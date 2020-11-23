@@ -1,0 +1,270 @@
+<!DOCTYPE.html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gym</title>
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="gym.css"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">   
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+</head>    
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-nav nav_fixed">
+  <a class="navbar-brand" id="gym" href="#"><img class="muscle" src="muscle.png">GYMI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+     
+      <li class="nav-item">
+        <a class="nav-link " id="about" href="#">ABOUT</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link " id="carrers" href="#">CARRERS</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link " id="contact" href="#">CONTACT US</a>
+      </li>
+  
+      
+    </ul>
+
+       <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button type="button" class="btn btn-outline-dark sign_in">Sign in</button></span>
+  </div>
+</nav>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+<p class="heading_login">LOGIN YOUR ACCOUNT</p>
+<h3 class="email">Email address.</h3>
+<input class="input" type="email" name="email" value="email">
+<p class="security">We'll never share your email.</p>        
+<h3 class="email">Password.</h3>
+<input class="input" type="password" name="password" value="password">
+<input class="check" type="checkbox" name="Check me out"><label class="form-check-label check1" for="exampleCheck1">Check me out</label>     
+<button type="button" class="btn btn-outline-primary sub">Submit</button>        
+</div>
+    
+<section id="section1">
+    <img class="bgimg" src="pexels-photo.jpg">
+    <h1>
+    Be Ready For Fit Focus on Your Fitness A Gym For you 
+    </h1>
+    <p class="p1">‘The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.’</p>
+    <button type="button" class="btn btn-outline-danger start">Get Start</button>
+    <button type="button" class="btn btn-outline-dark sign_in video">Watch Now</button>
+    </section>
+    <section>
+    <p class="p2">Okay i am in what next </p>
+    <h2 class="cardH">Choose Your program</h2>   
+   <div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12">
+      <div class="card card1" style="width: 18rem;">
+  <img src="gym.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Express Training</h5>
+    <p class="card-text">Heavy weights increase the power and strength of your muscles without significantly adding bulk or size, especially for women.</p>
+    <a href="#" class="btn btn-primary go">I'm intrested.</a>
+  </div>
+</div> 
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="card card2" style="width: 18rem;">
+  <img src="man-exercising-with-dumbbell.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pesonal Training</h5>
+    <p class="card-text">If you're new to the gym experience, getting a personal trainer is a smart idea and more in-depth sessions can help perfect your form.</p>
+    <a href="#" class="btn btn-primary go">I'm intrested.</a>
+  </div>
+</div>  
+    </div>
+    <div class="col-lg-4 col-md-12">
+         <div class="card card3" style="width: 18rem;">
+  <img src="group-of-men-running.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Group Wod</h5>
+    <p class="card-text">For those struggling to get motivated to start a fitness regiem, group exercise cad be one time-efficent and fun solution . </p>
+    <a href="#" class="btn btn-primary go">I'm intrested.</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>   
+    
+       
+        
+    
+    </section>
+    
+    <section>
+    
+   <div class="container">
+  <div class="row">
+    <div class="col-sm">
+       <img  src="Capture.png" class="copy">
+    </div>
+    <div class="col-sm">
+        <h3 class="copyh">Your Body is a work of art in the gym</h3> 
+<p class="p3">We work systametically to interogate coporate responsibility in our care business and make our expert available for the benifite of the societies where we operate .</p> 
+<button type="button" class="btn btn-outline-success copybtn">Learn More</button> 
+    </div>
+
+  </div>
+</div>
+<h2 class="team">Meet Our Team</h2> 
+        
+
+    </section>
+    
+    <section>
+    <div class="container teamc">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card card4" style="width: 18rem;">
+  <img src="Capture1.PNG" class="card-img-top cardimg2" alt="...">
+  <div class="card-body">
+    <p class="card-text">Harbajan Singh</p>
+      <img  class="teami" src="instagram%20(2).png">
+  </div>
+</div>
+    </div>
+    <div class="col-sm">
+     <div class="card card4" style="width: 18rem;">
+  <img src="Capture2.PNG" class="card-img-top cardimg2" alt="...">
+  <div class="card-body">
+      <p class="card-text">Sushama Patel</p><img class="teami" src="instagram%20(2).png"></div>
+</div>
+    </div>
+    <div class="col-sm">
+    <div class="card card4" style="width: 18rem;">
+  <img src="Capture3.PNG" class="card-img-top cardimg2" alt="...">
+  <div class="card-body">
+    <p class="card-text">Kostia Varhatiuk</p><img class="teami" src="instagram%20(2).png">
+  </div>
+</div>
+    </div>
+      
+      <div class="col-sm">
+  
+    </div>
+      
+     
+  </div>
+</div>
+      <div class="card card4 teamm" style="width: 18rem;">
+  <img src="Capture4.PNG" class="card-img-top cardimg2" alt="...">
+  <div class="card-body">
+    <p class="card-text">Seto Febriant</p><img class="teami" src="instagram%20(2).png">
+  </div>
+</div>    
+    
+     <button type="button" class="btn btn-outline-danger  join">Join now</button>    
+    </section>
+    <section>
+    <div class="form"><input type="text" value="First Name" class="fname">
+        <input type="text" value="Last Name" class="lname" >
+        <input type="email" value="Your Email" class="emaill">
+        <input type="text" value="Your Phone" class="phone">
+        <input type="text" value="Your Message" class="message">
+        
+        
+        </div>
+    
+    <button type="button" class="btn btn-success send">Send Message</button>
+<section>
+        <div class="table"><img src="muscle.png"><h2>GYMI</h2></div>
+   <div class="container tlink">
+  <div class="row">
+    <div class="col-sm tcol">
+        <h3 class="pl">Quck Links</h3><br><p class="pl">About Us</p><br><p class="pl"> Gallery</p><br><p class="pl">Service</p><br><p class="pl">Prices</p><br><p class="pl">Contacts</p>
+    </div>
+    <div class="col-sm tcol">
+     <h3 class="pl">Plan</h3><br><p class="pl">Basic PLan</p><br><p class="pl">Business Plan</p><br><p class="pl">Executive Plan</p><br><p class="pl">Free Plan</p><br><p class="pl">Standard Plan</p>
+    </div>
+    <div class="col-sm tcol">
+      <h3><p class="pl">Gymi Business</p></h3><br><p class="pl">Sell on Gym</p><br><p class="pl">Advertises on Gym</p><br><p class="pl">Affilate Program</p><br><p class="pl">Privacy& Policy</p><br><p class="pl">Partnership</p>
+    </div>
+  </div>
+    </div>
+        </section>
+    </section>
+    <div class="last"><img class="lastimg" src="instagram%20(2).png"><img class="lastimg" src="youtube%20(1).png"><img class="lastimg" src="gmail%20(2).png"></div>
+<footer>© Copyright 2020 sameer's Gym</footer>
+    <p></p>
+    <script type="text/javascript">
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+    
+    </body>    
+    </html>
